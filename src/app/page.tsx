@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
+import "./home.css"; // Importar pagina de estilização.
 
 const Home = () => {
 
@@ -28,15 +29,21 @@ const Home = () => {
   }
 
   return(
-    <main>
-      <form onSubmit={addUser}>
-        <label htmlFor="nameUser">Nome</label>
-        <input type="text" name="nameUser" id="nameUser" placeholder="Nome do cliente" onChange={valueInput}/><br /><br />
+    <main className="main-container">
+      <form onSubmit={addUser} className="form-container">
+        <h1>Cadastrar Usuário</h1>
+        
+        <div className="form-group"> 
+          <label htmlFor="nameUser">Nome</label>
+          <input type="text" name="nameUser" id="nameUser" placeholder="Nome do cliente" onChange={valueInput}/>
+        </div> 
 
-        <label htmlFor="email">E-mail</label>
-        <input type="text" name="emailUser" id="emailUser" placeholder="E-mail do cliente" onChange={valueInput}/><br /><br />
+        <div className="form-group">
+          <label htmlFor="email">E-mail</label>
+          <input type="text" name="emailUser" id="emailUser" placeholder="E-mail do cliente" onChange={valueInput}/>
+        </div>
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="btn-submit">Cadastrar</button>
       </form>
     </main>
   );

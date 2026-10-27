@@ -30,3 +30,6 @@ Acessar no navegador a URL.
 ```
 http://localhost:3000
 ```
+
+## Conclusão do projeto
+Este projeto foi desenvolvido com conhecimentos de TypeScript, React.js e Git, que o desenvolvedor aprendeu dentro do curso sobre React, do autor Celke.
